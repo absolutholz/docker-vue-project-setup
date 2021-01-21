@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --static-dir public",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -33,7 +33,5 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "_id": "@",
-  "readme": "ERROR: No README data found!"
+  }
 }
