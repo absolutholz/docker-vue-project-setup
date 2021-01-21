@@ -12,6 +12,7 @@ services:
     ports:
       - "8000:8000" # vue cli
       - "8080:8080" # server
+      - "6006:6006" # storybook
     volumes:
        - ./ui:/usr/src/ui
        - /usr/src/ui/node_modules
