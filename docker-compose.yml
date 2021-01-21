@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  ui:
+    container_name: vue-ui
+    build:
+      context: ./ui
+      dockerfile: ../docker-config/ui/Dockerfile
+    working_dir: /usr/src/ui
+    # environment:
+    #   NODE_ENV: development
+    ports:
+      - "8000:8000" # vue cli
+      - "8080:8080" # server
+    volumes:
+       - ./ui:/usr/src/ui
+       - /usr/src/ui/node_modules
+    # command: "tail -f /dev/null"
+    command: bash -c "vue ui -H 0.0.0.0"
